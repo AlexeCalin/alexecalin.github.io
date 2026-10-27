@@ -1,12 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Class Furn | Management</title>
-<style>
-:root{font-family:Segoe UI,Arial,sans-serif;color:#173653;background:#eef3f9}*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(135deg,#e9f2fa,#f8fbff)}main{width:min(100%,760px);background:white;border-radius:20px;padding:clamp(26px,5vw,55px);box-shadow:0 18px 55px #163c5c1b;text-align:center}h1{font-size:clamp(26px,4vw,36px);margin:0 0 12px}p{color:#61778a;margin:0 0 32px}.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}a{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;min-height:210px;padding:22px;border-radius:16px;background:#1766a2;color:#fff;text-decoration:none;box-shadow:0 8px 20px #1766a22a;transition:transform .2s,background .2s}a:hover,a:focus-visible{background:#104c7c;transform:translateY(-3px)}.icon{font-size:46px;line-height:1}strong{font-size:23px}small{font-size:13px;opacity:.9}@media(max-width:550px){.links{grid-template-columns:1fr}a{min-height:150px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Applications | Portal</title>
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#173c54;background:#f3f7fa}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;flex-direction:column}
+    header{background:#103e5a;color:#fff;padding:26px 24px;text-align:center}
+    header h1{font-size:27px;margin:0 0 7px}header p{margin:0;color:#cfe5f1;font-size:14px}
+    main{width:min(1050px,94%);margin:auto;padding:46px 0 65px}
+    h2{text-align:center;font-size:23px;margin:0 0 9px;color:#0d567b}
+    .intro{text-align:center;color:#607c8c;margin:0 0 30px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .tile{background:#fff;border:1px solid #d3e2eb;border-radius:13px;padding:29px 22px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 7px 22px #153c5910}
+    .symbol{width:66px;height:66px;border-radius:16px;display:grid;place-items:center;background:#e6f3fb;font-size:31px;margin-bottom:15px}
+    .tile h3{font-size:20px;margin:0 0 10px;color:#124f73}.tile p{font-size:14px;line-height:1.5;color:#617a89;flex:1;margin:0 0 25px}
+    .tile a{display:block;width:100%;padding:13px 16px;background:#1265ae;border-radius:7px;color:white;font-weight:bold;text-decoration:none}
+    .tile a:hover,.tile a:focus-visible{background:#0b4d86;outline-offset:3px}
+    footer{text-align:center;padding:20px;color:#6a8494;font-size:12px}
+    @media(max-width:760px){.grid{grid-template-columns:1fr}main{padding:32px 0}.tile{padding:24px}}
+  </style>
 </head>
-<body><main><h1>Class Furn – Management</h1><p>Selectează aplicația pe care dorești să o accesezi.</p><div class="links"><a href="https://alexecalin.github.io/facility-work-orders/"><span class="icon" aria-hidden="true">🏢</span><strong>Facilități</strong><small>Facility Work Orders</small></a><a href="https://alexecalin.github.io/maintenance-cmms/"><span class="icon" aria-hidden="true">🛠️</span><strong>Mentenanță</strong><small>Maintenance CMMS</small></a></div></main></body>
+<body>
+<header><h1>Company Applications</h1><p>Operations Management Portal</p></header>
+<main>
+  <h2>Selectează aplicația</h2>
+  <p class="intro">Acces rapid la aplicațiile pentru facilități, mentenanță și achiziții.</p>
+  <div class="grid">
+    <section class="tile"><div class="symbol" aria-hidden="true">🏢</div><h3>Facilități</h3><p>Work Orders și administrarea activităților de facilități.</p><a href="https://alexecalin.github.io/facility-work-orders/">Deschide Facilități</a></section>
+    <section class="tile"><div class="symbol" aria-hidden="true">🛠️</div><h3>Mentenanță</h3><p>Managementul activităților și intervențiilor de mentenanță.</p><a href="https://alexecalin.github.io/maintenance-cmms/">Deschide Mentenanță</a></section>
+    <section class="tile"><div class="symbol" aria-hidden="true">🛒</div><h3>Purchasing</h3><p>Purchase Requests, oferte și fluxul de aprobare.</p><a href="https://alexecalin.github.io/purchasing/">Deschide Purchasing</a></section>
+  </div>
+</main>
+<footer>Company Applications Portal</footer>
+</body>
 </html>
